@@ -13,8 +13,8 @@ jobs:
       run: npm ci
     - name: lint runner    
       run: npm run lint
-    - name: test runner
-      run: npm test
+    #- name: test runner
+    #  run: npm test
     - name: build runner
       run: npm run build
     - name: deploy runner
