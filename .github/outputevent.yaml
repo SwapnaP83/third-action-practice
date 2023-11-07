@@ -1,0 +1,11 @@
+name: ouput_event
+on:
+  push:
+    branches:
+      - main  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: output event
+        run: echo "Hello ${{ github.issues.output}}"
